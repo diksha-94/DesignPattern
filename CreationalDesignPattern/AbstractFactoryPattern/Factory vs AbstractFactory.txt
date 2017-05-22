@@ -1,0 +1,50 @@
+Factory: A factory that creates objects that derive from a particular base class.
+
+Abstract factory: A factory that creates other factories, and these factories in 
+turn create objects derived from base classes. You do this because you often don't
+just want to create a single object (as with Factory method) - rather, you want to
+create a collection of related objects.
+
+
+Real Life Example. (Easy to remember)
+
+Factory
+
+Imagine you are constructing a house and you approach a carpenter for a door.
+You give the measurement for the door and your requirements, and he will construct
+a door for you. In this case, the carpenter is a factory of doors. Your specifications
+are inputs for the factory, and the door is the output or product from the factory.
+
+Abstract Factory
+
+Now, consider the same example of the door. You can go to a carpenter, or you can go
+to a plastic door shop or a PVC shop. All of them are door factories. Based on the 
+situation, you decide what kind of factory you need to approach. This is like an Abstract Factory.
+
+
+Factory pattern provides abstraction over the products while Abstract Factory provides abstraction over the factory itself.
+
+Factory design Pattern:- In this pattern we define an interface which will expose a method which will create objects for us.
+Return type of that method is never be a concrete type rather it will be some interface (or may be an abstract class) 
+Abstract Factory Design Pattern:- In Abstract Factory we define an interface which will create families of related or dependent objects. 
+In simple words, interface will expose multiple methods each of which will create some object. Again, here method return types will be 
+generic interfaces. All this objects will together become the part of some important functionality. 
+•	First of all both of them falls under Creational category and it means it will solves the problem pertaining to object creation. 
+•	Factory Method and abstract factory pattern all are about creating objects
+
+
+Examples of Abstract Factory Pattern---
+
+1. Bank and Loan--> two dependent entities
+		one is the ank factory and the another is loan factory.
+		Abstract factory that expose multiple methods, each of which will create an object. For example-it can have two methods- one iwill create an bject of Bank and
+		another will create for Loan.
+		
+2. Car --> can be of many manufacturers(factories),like Hyundai, Honda.
+		So CarFactory(Abstract factory) exposes method that will create an objectof any of the factory say HondaFactory or HyundaiFactory.
+		Further HondaFactory or HyundaiFactory creates object of Car.
+		
+Abstract Factory Pattern is one level higher abstract than Factory Pattern, because Factory Pattern just Provides abstraction at the level of creating the subclass object.
+While Abstract Factory Pattern provides abstraction at factory level s well and then eventually at creating the subclass object.
+
+--> Both Factory Pattern and Abstract Factory Pattern decouples the actual object creation from the client application, as the object is created by the Factory Method.
