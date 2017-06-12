@@ -1,0 +1,4 @@
+Structural Design Patterns--->
+		are concerned with the way of composing objects and classes to form large structures.
+		they simplify the structires by identifying the rlationships between the entities.
+		focussed on how classes inherit other classes and how they are composed from other classes.
